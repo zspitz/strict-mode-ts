@@ -20,5 +20,8 @@ To install:
 To run:
 
 `npm run dev`
+<<<<<<< HEAD
 
 Fixes for the various issues can be found in the `fixes` branch.
+=======
+>>>>>>> 58124ee0b933cc6597e39404871398ca6c889853

@@ -11,6 +11,8 @@ Has a number of components to help explain exactly what StrictMode does.
 
 Component re-render can be triggered by toggling the theme with the button at the top of the page.
 
+Component mount/unmount can be triggered using the checkbox.
+
 To install:
 
 `npm i`
@@ -18,3 +20,5 @@ To install:
 To run:
 
 `npm run dev`
+
+Fixes for the various issues can be found in the `fixes` branch.

@@ -6,16 +6,23 @@ const GeoData = () => {
     const [items, setItems] = useState<string[]>([])
 
     useEffect(() => {
+        let throwAway = false
+
         const fetchItems = async () => {
             const fetchedItems =
                 api === 'cities' ? await citiesApi() :
                     api === 'countries' ? await countriesApi() :
                         []
 
+            if (throwAway) { return }
             setItems(fetchedItems)
         }
 
         fetchItems()
+
+        return () => {
+            throwAway = true
+        }
     }, [api])
 
     return (
